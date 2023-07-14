@@ -1,4 +1,5 @@
 .logo-container {
+  overflow: hidden;
   z-index: 0;
   width: 300px;
   height: 609px;
@@ -10,7 +11,6 @@
   left: auto;
   margin: auto;
 
-
   .solid-logo {
     position: absolute;
     top: auto;
@@ -20,69 +20,60 @@
     margin: auto;
     width: 100%;
     opacity: 0;
-
-
-    
-
   }
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap');
 
 @mixin keyFrame($animeName) {
   @-webkit-keyframes #{$animeName} {
-      @content;
-    }
-    @-moz-keyframes #{$animeName} {
-      @content;
-    }
-    @keyframes #{$animeName} {
-      @content;
-    }
+    @content;
+  }
+  @-moz-keyframes #{$animeName} {
+    @content;
+  }
+  @keyframes #{$animeName} {
+    @content;
+  }
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
+  overflow: hidden;
   display: flex;
- 
 }
-.box {
 
-  
+.box {
+  overflow: hidden;
   z-index: 0;
   width: 300px;
   height: 609px;
-  
   position: absolute;
   top: 0;
   right: 15%;
   bottom: 0;
   left: auto;
   margin: auto;
-  
-  top: 0;
-  right: 15%;
-  bottom: 0;
-  left: auto;
-  margin: auto;
- 
   width: 300px;
   height: 400px;
   background-color: #F6E7D8;
   border-radius: 50%;
   overflow: hidden;
+
   &::before {
     content: '';
     position: absolute;
     inset: -10px 100px;
-    background: linear-gradient( #073c57, #012538);
+    background: linear-gradient(#073c57, #012538);
     transition: .5s;
     animation: animate 4s linear infinite;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -91,6 +82,7 @@ body {
     border-radius: 50%;
     z-index: 1;
   }
+
   .content {
     position: absolute;
     inset: 30px;
@@ -102,6 +94,7 @@ body {
     align-items: center;
     overflow: hidden;
     flex-direction: column;
+
     img {
       position: absolute;
       top: 0;
@@ -113,6 +106,7 @@ body {
       pointer-events: none;
       z-index: 3;
     }
+
     h2 {
       position: relative;
       text-align: center;
@@ -122,6 +116,7 @@ body {
       text-transform: uppercase;
       color: #fff;
       padding: 10px 0;
+
       span {
         display: block;
         font-weight: 300;
@@ -129,6 +124,7 @@ body {
         padding: 5px 0;
       }
     }
+
     a {
       position: relative;
       background-color: #ffd900dc;
@@ -141,26 +137,28 @@ body {
       letter-spacing: 1px;
       text-decoration: none;
       transition: .5s;
+
       &:hover {
         letter-spacing: 3px;
       }
     }
   }
+
   &:hover {
     &::before {
       inset: -20px 0px;
     }
     img {
-      opacity: 0
+      opacity: 0;
     }
   }
 }
 
 @include keyFrame(animate) {
   0% {
-    transform: rotate(0)
+    transform: rotate(0);
   }
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }

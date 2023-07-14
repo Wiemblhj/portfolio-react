@@ -1,8 +1,10 @@
 .home-page {
+
     .text-zone {
       position: absolute;
       left: 10%;
       top: 50%;
+      overflow: hidden;
       transform: translateY(-50%);
       width: 40%;
       max-height: 90%;
@@ -46,6 +48,7 @@
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
+        overflow: hidden;
       }
     }
   
