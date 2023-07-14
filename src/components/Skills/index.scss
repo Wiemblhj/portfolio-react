@@ -1,96 +1,113 @@
+.container-Skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5%;
+}
 
+.col {
+  flex-basis: 23%;
+  margin: 0 2.5%;
+  position: relative;
+  font-size: 12px;
+  line-height: 2em;
+  padding: 5% 0;
+}
 
+@media (max-width: 767px) {
+  .col {
+    flex-basis: 100%;
+    margin: 20px 0;
+  }
+}
 
 h2.titulo {
   font-size: 2.7em;
   font-weight: normal;
   padding: 10px 0 16px 0;
   margin: 0 0 30px;
-  text-align:center;
-  color:#2187e7;
+  text-align: center;
+  color: #2187e7;
   text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
-  background:#000;
-  border-radius:2px;
-  border: 1px solid #2187e7;  
+  background: #000;
+  border-radius: 2px;
+  border: 1px solid #2187e7;
   box-shadow: 0px 0px 50px -8px #2187e7;
 }
+
 h2.plataformas {
-  border: 1px solid #9ACD32;  
-  box-shadow: 0px 0px 50px -8px #9ACD32;
-  color: #9ACD32;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #9ACD32, 0 0 20px #9ACD32;
+  border: 1px solid #9acd32;
+  box-shadow: 0px 0px 50px -8px #9acd32;
+  color: #9acd32;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #9acd32, 0 0 20px #9acd32;
 }
 
 h2.programas {
-  border: 1px solid #FF4500;  
-  box-shadow: 0px 0px 50px -8px #FF4500;
-  color: #FF4500;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #FF4500, 0 0 20px #FF4500;
-}
- 
-.container-Skills {
-  width: 90%;
-  padding:5%;
-  margin: 0 auto; 
-  overflow: hidden;
+  border: 1px solid #ff4500;
+  box-shadow: 0px 0px 50px -8px #ff4500;
+  color: #ff4500;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #ff4500, 0 0 20px #ff4500;
 }
 
-.col {
-  width: 23%;
-  margin: 0 5%;
+.skill {
+  list-style: none;
+  padding-top: 30px;
+}
+
+.skill li {
+  margin-bottom: 70px;
+  background: #030303;
+  height: 6px;
+  border-radius: 3px;
+  border-left: 1px solid #111;
+  border-top: 1px solid #111;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.skill li em {
   position: relative;
-  float: left;
-  font-size: 12px;
-  line-height: 2em;
-  padding: 5% 0;
-} 
-/*.col { width:101%; }*/
-.skill { 
-  list-style:none; 
-  padding-top:30px;
-}
-
-.skill li { 
-  margin-bottom:70px; 
-  background:#030303; 
-  height:6px; 
-  border-radius:3px; 
-  border-left:1px solid #111; 
-  border-top:1px solid #111; 
-  border-right:1px solid #333; 
-  border-bottom:1px solid #333;  
-}
-
-.skill li em { 
-  position:relative; 
   font-style: normal;
   font-size: 14px;
   text-align: center;
-  color:#dedede;
-  top:-28px;
+  color: #dedede;
+  top: -28px;
 }
 
-.blueline { 
-  height: 3px; 
-  margin: 2px 0; 
-  background: #2187e7; 
+.blueline {
+  height: 3px;
+  margin: 2px 0;
+  background: #2187e7;
   position: absolute;
-  box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.6);
+  box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.6);
+  animation: html 2s ease-out;
 }
-.greenline { 
-  height: 3px; 
-  margin: 2px 0; 
-  background: #9ACD32; 
+
+.greenline {
+  height: 3px;
+  margin: 2px 0;
+  background: #9acd32;
   position: absolute;
-  box-shadow: 0px 0px 10px 1px rgba(173, 255, 47,0.4);
+  box-shadow: 0px 0px 10px 1px rgba(173, 255, 47, 0.4);
+  animation: react-js 2s ease-out;
 }
-.redline { 
-  height: 3px; 
-  margin: 2px 0; 
-  background: #FF4500; 
+
+.redline {
+  height: 3px;
+  margin: 2px 0;
+  background: #ff4500;
   position: absolute;
-  box-shadow: 0px 0px 10px 1px rgba(255, 69, 0,0.4);
+  box-shadow: 0px 0px 10px 1px rgba(255, 69, 0, 0.4);
+  animation: vscode 2s ease-out;
 }
+
+
+
+
+
 
 .titulo      { opacity:1;  animation:titulo 5s ease-out;     }
 

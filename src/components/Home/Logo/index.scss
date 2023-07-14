@@ -10,6 +10,13 @@
   bottom: 0;
   left: auto;
   margin: auto;
+  
+  @media screen and (max-width: 768px) {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+  }
 
   .solid-logo {
     position: absolute;
@@ -20,7 +27,12 @@
     margin: auto;
     width: 100%;
     opacity: 0;
+    
+    @media screen and (max-width: 768px) {
+      bottom: 10px;
+    }
   }
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap');
